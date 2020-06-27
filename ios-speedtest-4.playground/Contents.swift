@@ -7,20 +7,22 @@ import UIKit
 //MARK: for- in loop خمس مرات باستخدام ال "iOS" قم بطباعه
 
 
-
+for i in["iOS","iOS", "iOS", "iOS","iOS"]{
+    print(i)
+}
 
 //: # 2️⃣ function
 
 // MARK: هذي الداله تقوم بضرب رقمين و ترجع الناتج
 
-func Multiplication(  number1 : Int ,  number2 : Int)
+func Multiplication(  number1 : Int ,  number2 : Int)-> Int
 {
     
-    return number1 * number2
+    return  number1 * number2
 }
 // MARK:   بما يناسب صيغه هذا الاستدعاء Multiplication قم بتعديل  الداله
 
-Multiplication(5,7)
+Multiplication(number1:5, number2:7)
 
 
 
@@ -31,4 +33,9 @@ Multiplication(5,7)
 
 
 // MARK:  الكائن  object مبنية علي هذي struct  قم بكتابة كود ال
+struct Student {
+    var name: String
+    var age: Int
+    var hobbies: [String]
+}
 var student = Student(name: "Omar", age: 25 , hobbies: ["Coding", "drawing"])
